@@ -1,0 +1,18 @@
+{
+  "name": "@pa/02-be-modular",
+  "version": "1.0.1",
+  "description": "Splitting your application to modular chunks is a major step to make your code reusable.  In this lesson we will learn about the module system in node.  How to export a module How to import a module How to use npm How to use community packages and built in packages How to publish a package of your own.",
+  "main": "student.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "karma": "^3.0.0"
+  }
+}
