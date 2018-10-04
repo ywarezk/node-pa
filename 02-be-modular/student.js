@@ -1,3 +1,9 @@
+const lodash = require('lodash');
+
+
+// lodash.find([1,2,3,4], function() {
+
+// });
 
 
 // Symbol
