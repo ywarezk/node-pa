@@ -1,0 +1,7 @@
+## Node async code best practices
+
+Writing async code in JS is a challange.
+Async code is bug prune and hard to debug. 
+In this lesson we will learn how to deal with async code in js
+We will cover a bunch of tools and conventions for writing async code. 
+We will be able to identify when our async code is not well written and use Promises, or async await functions, or async.js library or event emitters to make our code better written with less bugs. 
