@@ -33,6 +33,19 @@ catch(err) {
 
 }
 
+function readFileWithError() {
+    const myEmitter = new EventEmitter();
+    fs.readFile('non-existent-file', function(err, result) {
+        if (err) {
+            myEmitter.emit('error', err);
+            // throw err;
+            // deal with exception
+        }
+        myEmitter.emit('data', result);
+    });
+    return myEmitter;
+}
+
 
 // async hell with promises
 
@@ -41,7 +54,7 @@ const readFilePromise = require('./ex/read-file-promise');
 const getPromise = require('./ex/http-promise');
 
 timerPromise(1000)
-    .then('stam.txt')
+    .then(() => readFilePromise('stam.txt'))
     .then(url => getPromise(url))
     .then(function(html) {
         console.log(html);
