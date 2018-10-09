@@ -7,4 +7,4 @@ In this lesson we will learn about sessions in express
 - Some security concerns when dealing with session
 
 The lesson summary is located in the following URL:
-[Nerdeez Lesson Article](https://www.google.com "Nerdeez Articles")
+[Nerdeez Lesson Article](https://www.nerdeez.com/articles/express/express-sessions "Nerdeez Articles")
