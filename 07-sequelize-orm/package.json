@@ -1,0 +1,22 @@
+{
+  "name": "07-sequelize-orm",
+  "version": "1.0.0",
+  "description": "In this lesson we will learn how to connect to a database create orm from our tables using sequelize create a rest server validate our data and create migrations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "pg": "^7.5.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.39.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^4.1.1"
+  }
+}

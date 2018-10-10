@@ -1,0 +1,1 @@
+/usr/local/Cellar/postgresql/10.1/bin/postgres "-D" "/Users/yarivkatz/Development/workspace/lectures/node-pa/07-sequelize-orm/db"
