@@ -65,8 +65,9 @@ app.get('/todo/:id/:stam/:details', function(req, res) {
 
 
 // connecting a router
-app.use('/login', loginRouter)
+app.use('/login', loginRouter);
 
+app.use('/v2/login', loginRouterV2);
 
 app.listen(3001, function() {
     console.log('we are now listening on port 3001');
