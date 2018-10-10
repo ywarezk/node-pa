@@ -3,4 +3,7 @@ html
     head
         title hello world
     body
-        h1(class="hello") hello world from template
+        h1(class="hello" style="background-color: red;") hello world from template
+        form(method="post" action="." novalidate="")
+            input(type="email" name="email" placeholder="email")
+            button(type="submit") submit
