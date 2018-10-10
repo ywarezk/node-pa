@@ -1,0 +1,43 @@
+extends layout
+
+block title
+    title another title
+
+block content
+
+
+    h1(class="welcome" id="welcome-id") hello world
+    h1 hello my name is: #{name}    
+    h1=`hello my name is: ${name}` 
+    h1#myId - these are character not js
+    ul
+        - for(let item of groceries)
+            li= item
+    -
+        function sayHello() {
+            return 'hello from function';
+        }
+
+    ul
+        for item in groceries
+            li= item
+        each item in groceries
+            li= item
+
+    h5= sayHello()
+    
+    - if(isAdmin)
+        h1 hello admin user
+    - else
+        h1 hello guest user
+
+    case isAdmin
+        when true 
+            h1 hello admin
+        when false 
+            h1 hello guesy
+        default 
+            h1 hello guest
+
+
+        
