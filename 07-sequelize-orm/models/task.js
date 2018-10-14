@@ -1,4 +1,5 @@
 
+
 module.exports = (sequelize, DataTypes) => {
     const Task = sequelize.define('task', {
         title: {
@@ -16,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
         }
     });
     const User = sequelize.import('./user');
-    Task.belongsTo(User);
+    // Task.belongsTo(User);
     Task.sync();
     return Task;
 }

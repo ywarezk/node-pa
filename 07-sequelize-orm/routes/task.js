@@ -11,7 +11,7 @@ taskRouter.route('')
     .get(async (req, res) => {
         try {
             const tasks = await Task.findAll({
-                include: [User]
+                include: User
             });
             res.json(tasks);
         } catch(err) {

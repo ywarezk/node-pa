@@ -1,0 +1,19 @@
+{
+  "name": "08-express-sessions",
+  "version": "1.0.0",
+  "description": "In this lesson we will learn about sessions in express - What are sessions - How can we store them - Express session middleware - Some security concerns when dealing with session",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-redis": "^3.4.0",
+    "csurf": "^1.9.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "pug": "^2.0.3"
+  }
+}

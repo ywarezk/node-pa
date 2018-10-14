@@ -1,0 +1,28 @@
+2018-10-14 11:16:51.718 IDT [5805] LOG:  could not bind IPv6 address "::1": Address already in use
+2018-10-14 11:16:51.718 IDT [5805] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-10-14 11:16:51.718 IDT [5805] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-10-14 11:16:51.720 IDT [5805] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-10-14 11:16:51.749 IDT [5806] LOG:  database system was shut down at 2018-10-10 15:59:03 IDT
+2018-10-14 11:16:51.764 IDT [5805] LOG:  database system is ready to accept connections
+2018-10-14 11:18:01.831 IDT [5843] ERROR:  relation "session" does not exist at character 13
+2018-10-14 11:18:01.831 IDT [5843] STATEMENT:  DELETE FROM "session" WHERE expire < to_timestamp($1)
+2018-10-14 11:18:08.057 IDT [5845] ERROR:  relation "session" does not exist at character 18
+2018-10-14 11:18:08.057 IDT [5845] STATEMENT:  SELECT sess FROM "session" WHERE sid = $1 AND expire >= to_timestamp($2)
+2018-10-14 11:18:37.606 IDT [5855] FATAL:  database "yarivkatz" does not exist
+2018-10-14 11:18:50.326 IDT [5862] ERROR:  relation "session" does not exist at character 13
+2018-10-14 11:18:50.326 IDT [5862] STATEMENT:  DELETE FROM "session" WHERE expire < to_timestamp($1)
+2018-10-14 11:19:46.441 IDT [5805] LOG:  received fast shutdown request
+2018-10-14 11:19:46.442 IDT [5805] LOG:  aborting any active transactions
+2018-10-14 11:19:46.443 IDT [5805] LOG:  worker process: logical replication launcher (PID 5812) exited with exit code 1
+2018-10-14 11:19:46.443 IDT [5807] LOG:  shutting down
+2018-10-14 11:19:46.458 IDT [5805] LOG:  database system is shut down
+2018-10-14 11:19:57.903 IDT [5936] LOG:  could not bind IPv6 address "::1": Address already in use
+2018-10-14 11:19:57.903 IDT [5936] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-10-14 11:19:57.903 IDT [5936] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-10-14 11:19:57.904 IDT [5936] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-10-14 11:19:57.918 IDT [5937] LOG:  database system was shut down at 2018-10-14 11:19:38 IDT
+2018-10-14 11:19:57.921 IDT [5936] LOG:  database system is ready to accept connections
+2018-10-14 11:20:17.197 IDT [5984] ERROR:  relation "session" does not exist at character 13
+2018-10-14 11:20:17.197 IDT [5984] STATEMENT:  DELETE FROM "session" WHERE expire < to_timestamp($1)
+2018-10-14 11:21:17.210 IDT [6027] ERROR:  relation "session" does not exist at character 13
+2018-10-14 11:21:17.210 IDT [6027] STATEMENT:  DELETE FROM "session" WHERE expire < to_timestamp($1)

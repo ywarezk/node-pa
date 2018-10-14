@@ -16,5 +16,6 @@ module.exports = (sequelize, DataTypes) => {
         }
     });
     User.sync();
+    // User.hasMany(Task)
     return User;
 }
