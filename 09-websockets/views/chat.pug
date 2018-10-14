@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        title Chat App
+    body
+        div(class="messages-wrapper")
+            ul(id="chat-content")
+
+
+        div(class="message-form")
+            form(id="chat-form")
+                input(type="text" name="message" id="chat-input")
+                button(type="submit") Submit
+
+        script(src="/js/ws.js")

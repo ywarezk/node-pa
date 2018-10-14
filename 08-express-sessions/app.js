@@ -21,7 +21,7 @@ app.use(session({
     resave: false
 }));
 
-app.use(csurf())
+app.use(csurf());
 
 app.set('views', path.resolve(__dirname, 'views'));
 app.set('view engine', 'pug');

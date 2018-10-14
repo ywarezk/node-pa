@@ -1,0 +1,17 @@
+{
+  "name": "09-websockets",
+  "version": "1.0.0",
+  "description": "In this lesson we will learn how to create a chat application with express. We will explain about websockets protocol and how to exchange messages in a websocket communication. For the full lesson summary visit: [Nerdeez](https://https://www.nerdeez.com/articles/node/express-websockets)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "ws": "^6.1.0"
+  }
+}
