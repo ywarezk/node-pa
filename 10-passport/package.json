@@ -1,0 +1,20 @@
+{
+  "name": "10-passport",
+  "version": "1.0.0",
+  "description": "In this lesson we will learn how to integrate passport with our express application. We will learn about different Strategies and how to combine session in our authentication.  We will also learn how to protect our REST API with JWT Authentication.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.3.0",
+    "passport": "^0.4.0",
+    "passport-custom": "^1.0.5",
+    "pug": "^2.0.3"
+  }
+}
