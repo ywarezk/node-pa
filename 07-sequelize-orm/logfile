@@ -9,3 +9,11 @@
 2018-10-10 15:59:03.674 IDT [8591] LOG:  worker process: logical replication launcher (PID 8598) exited with exit code 1
 2018-10-10 15:59:03.674 IDT [8593] LOG:  shutting down
 2018-10-10 15:59:03.683 IDT [8591] LOG:  database system is shut down
+2018-10-17 14:32:58.671 IDT [20102] LOG:  could not bind IPv6 address "::1": Address already in use
+2018-10-17 14:32:58.671 IDT [20102] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-10-17 14:32:58.672 IDT [20102] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-10-17 14:32:58.673 IDT [20102] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-10-17 14:32:58.694 IDT [20103] LOG:  database system was shut down at 2018-10-14 11:19:46 IDT
+2018-10-17 14:32:58.702 IDT [20102] LOG:  database system is ready to accept connections
+2018-10-17 14:47:19.848 IDT [20661] ERROR:  relation "users" does not exist at character 13
+2018-10-17 14:47:19.848 IDT [20661] STATEMENT:  DELETE FROM "users"

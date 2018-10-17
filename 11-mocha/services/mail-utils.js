@@ -22,3 +22,9 @@ module.exports = class EmailUtils {
     }
 
 }
+
+// function EmailUtils() {
+
+// }
+
+// EmailUtils.prototype.isMailValid

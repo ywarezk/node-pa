@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/index.js"
+            "program": "${workspaceFolder}/app.js"
         },
         {
             "type": "node",
@@ -16,7 +16,7 @@
             "name": "Mocha debug",
             "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
             "args": [
-                "**/*.test.js"
+                "login.test.js"
             ]
         }
     ]
