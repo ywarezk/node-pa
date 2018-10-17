@@ -17,3 +17,8 @@
 2018-10-17 14:32:58.702 IDT [20102] LOG:  database system is ready to accept connections
 2018-10-17 14:47:19.848 IDT [20661] ERROR:  relation "users" does not exist at character 13
 2018-10-17 14:47:19.848 IDT [20661] STATEMENT:  DELETE FROM "users"
+2018-10-17 15:00:19.625 IDT [20102] LOG:  received fast shutdown request
+2018-10-17 15:00:19.626 IDT [20102] LOG:  aborting any active transactions
+2018-10-17 15:00:19.627 IDT [20102] LOG:  worker process: logical replication launcher (PID 20109) exited with exit code 1
+2018-10-17 15:00:19.627 IDT [20104] LOG:  shutting down
+2018-10-17 15:00:19.634 IDT [20102] LOG:  database system is shut down
