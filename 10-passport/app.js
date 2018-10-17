@@ -6,6 +6,8 @@ const passport = require('passport');
 const session = require('express-session');
 const PassportCustom = require('passport-custom');
 const jwt = require('jsonwebtoken');
+const PassportJwt = require('passport-jwt').Strategy;
+const PassportJwtExtractFn = require('passport-jwt').ExtractJwt;
 const app = express();
 
 app.use(express.json());
@@ -33,6 +35,16 @@ passport.use('helloworld', new PassportCustom(function(req, done){
     } else {
         done(null, false);
     }
+}));
+
+passport.use('jwt', new PassportJwt({
+    secretOrKey: 'nerdeez.com',
+    jwtFromRequest: PassportJwtExtractFn.fromAuthHeaderAsBearerToken()
+}, function verify(payload, done) {
+    // payload - {id: pk in user database}
+    // our user {foo: 'bar'}
+    // User.findById(payload.id).then((user) => done(null, user))
+    done(null, payload);
 }));
 
 // what to put in the session
@@ -65,7 +77,10 @@ app.get('/restricted', isLoggedInBySession, function(req, res) {
     res.render('restricted');
 });
 
-app.get('/todo', passport.authenticate('jwt'), function(req, res) {
+app.get('/todo', passport.authenticate('jwt', {
+    session: false
+}), function(req, res) {
+    // req.user will contain user from database
     res.json([
         'buy grocery',
         'walk piglet',
