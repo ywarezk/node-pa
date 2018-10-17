@@ -1,0 +1,7 @@
+html
+    body
+        form(method="post" action="/login" novalidate)
+            input(type="email" name="email")
+            button(type="submit") submit
+            - if (error)
+                div(class="label label-danger") bad email

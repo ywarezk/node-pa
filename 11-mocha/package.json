@@ -1,0 +1,22 @@
+{
+  "name": "11-mocha",
+  "version": "1.0.0",
+  "description": "In this lesson we will learn how to write unit tests using mocha we will learn how to test our models, routes and REST Server.  We will learn how to fake our services and make our db contain fixed data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "find-module-bin": "0.0.2",
+    "mocha": "^5.2.0",
+    "node-fetch": "^2.2.0"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3"
+  }
+}
